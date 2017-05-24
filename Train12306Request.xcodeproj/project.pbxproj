@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14550EFACD39F327CABE835B /* libPods-Train12306Request.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CF5123A124DE213C8D6DD4 /* libPods-Train12306Request.a */; };
 		2332A7911EBC5DF20002A757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2332A7901EBC5DF20002A757 /* AppDelegate.swift */; };
 		2332A7931EBC5DF20002A757 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2332A7921EBC5DF20002A757 /* ViewController.swift */; };
 		2332A7961EBC5DF20002A757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2332A7941EBC5DF20002A757 /* Main.storyboard */; };
 		2332A7981EBC5DF20002A757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2332A7971EBC5DF20002A757 /* Assets.xcassets */; };
 		2332A79B1EBC5DF20002A757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2332A7991EBC5DF20002A757 /* LaunchScreen.storyboard */; };
+		2332A7A41EBC63590002A757 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2332A7A31EBC63590002A757 /* APIConfig.swift */; };
+		236CAF301EC00A9E00ABEB85 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CAF2F1EC00A9E00ABEB85 /* Base.swift */; };
+		236CAF351EC010E300ABEB85 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CAF341EC010E300ABEB85 /* LoginRequest.swift */; };
+		236CAF371EC010F800ABEB85 /* Train12306Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CAF361EC010F800ABEB85 /* Train12306Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +26,12 @@
 		2332A7971EBC5DF20002A757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2332A79A1EBC5DF20002A757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2332A79C1EBC5DF20002A757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2332A7A31EBC63590002A757 /* APIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		236CAF2F1EC00A9E00ABEB85 /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		236CAF341EC010E300ABEB85 /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		236CAF361EC010F800ABEB85 /* Train12306Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Train12306Request.swift; sourceTree = "<group>"; };
 		7F8D696EA3F2EC896C92D5D0 /* Pods-Train12306Request.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Train12306Request.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Train12306Request/Pods-Train12306Request.debug.xcconfig"; sourceTree = "<group>"; };
 		8C970910BF0132D323566D8D /* Pods-Train12306Request.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Train12306Request.release.xcconfig"; path = "Pods/Target Support Files/Pods-Train12306Request/Pods-Train12306Request.release.xcconfig"; sourceTree = "<group>"; };
-		93CF5123A124DE213C8D6DD4 /* libPods-Train12306Request.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Train12306Request.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14550EFACD39F327CABE835B /* libPods-Train12306Request.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +80,10 @@
 		2332A7A21EBC60410002A757 /* 12306Request */ = {
 			isa = PBXGroup;
 			children = (
+				236CAF2F1EC00A9E00ABEB85 /* Base.swift */,
+				2332A7A31EBC63590002A757 /* APIConfig.swift */,
+				236CAF361EC010F800ABEB85 /* Train12306Request.swift */,
+				236CAF341EC010E300ABEB85 /* LoginRequest.swift */,
 			);
 			path = 12306Request;
 			sourceTree = "<group>";
@@ -91,7 +100,6 @@
 		E070659074ABD0CDF9CE797F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93CF5123A124DE213C8D6DD4 /* libPods-Train12306Request.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,6 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2332A7931EBC5DF20002A757 /* ViewController.swift in Sources */,
+				2332A7A41EBC63590002A757 /* APIConfig.swift in Sources */,
+				236CAF371EC010F800ABEB85 /* Train12306Request.swift in Sources */,
+				236CAF301EC00A9E00ABEB85 /* Base.swift in Sources */,
+				236CAF351EC010E300ABEB85 /* LoginRequest.swift in Sources */,
 				2332A7911EBC5DF20002A757 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
